@@ -1,4 +1,3 @@
-/*reset*/
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +9,9 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background:url("../imagenes/fondo/wp3739473.jpg");
+    background:rgb(0, 0, 0);
 
-    background-size: 100%;
+
 }
 
 
@@ -149,112 +148,236 @@ font-size: 20px;
 }
 
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*    border-style: solid;
+    border-color: #ffffff;/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-.Titulo{
-    display: block;
+.contenedor_1{
     position: relative;
-    left: 20%;
-    width: 60%;
-    height: 80px;
-    top: 100px;
-    background: white(225, 19, 19);
-    z-index: 1;
-
+    top: 80px;
+    background-color: black;
 }
 
-.Titulo_a {
-color: black;
-font-size: 50px;
-}
-.Titulo_b {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    }
-
-
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.seccion{
-    position: relative;
-    width: 80%;
-    left: 10%;
-    height: 280px;
-
-    top: 250px;
-    background: black;
-    z-index: 1;
-}
-.seccion img{
-    border-radius: 15px;
-}
-
-.imagen{
+.parte_1{
     position: absolute;
-    top: 10px;
-    width: 350px;
-    height: 230px;
-    left: 60%;
-
-}
-.imagen img{
-    width: 92%;
-    border-radius: 15px;
+    width: 57%;
+    padding-left: 16px;
+    padding-right: 12px;
 }
 
-.TEXTO{
-    position: absolute;
-    width: 50%;
-    left: 5%;
-    top: 1px;
-
-
+.texto_3{
+    color:blueviolet;
+    font-family: 'reboto', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    text-align:left;
 }
 
-.titulo{
-    font-size: 27px;
+.texto_1{
     color: white;
-}
-.texto{
-font-size: 17px;
-color: yellow;
+
+
+    font-size: 35px;
+    font-weight: 600;
 }
 
-.imagen_i{
-    position: absolute;
-    width: 50%;
-    left: 5%;
-    top: 1px;
-}
-.imagen_i img{
-    border-radius: 15px;
-}
-.TEXTO_i{
-    position: absolute;
-    top: 10px;
-    width: 350px;
-    height: 230px;
-    left: 60%;
-}
-
-.img_1{
-    position: relative;
-    left: 2%;
-    width: 350px;
-}
-.img_2{
-    position: relative;
-    bottom: 112%;
-    left: 35.5%;
-    width: 350px;
-}
-.img_3{
-    position: relative;
-    bottom: 225%;
-    left: 69%;
-    width: 350px;
-}
-.img_1 p{
+.texto_2{
     color: yellow;
+    text-align:justify;
+    font-size: 15px;
+}
+.boton{
+    background-color: black;
+    color:#3cb548;
+    border: 1px solid #15ea2a;
+    text-decoration: none;
+    padding: .8%;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    color:white;
+    border: 2px solid white;
+}
+
+
+.parte_2{
+    position: absolute;
+    left: 57%;
+    width: 43%;
+    padding-top: 20px ;
+}
+.parte_2 img{
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenedor_2{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position: relative;
+    top: 430px;
+}
+.contenedor_2 div{
+
+    width: 33%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+.concienciacion{
+
+
+    color: white;
+    font-size: 15px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor_3{
+    background-color: yellow;
+    position: relative;
+    top: 470px;
+    left: 8%;
+    width: 84%;
+    height: 250px;
+    display: flex;
+    flex-direction:row;
+    align-items:baseline;
+
+}
+
+.contenedor_3 div{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 50%;
+    height: 250px;
+    padding-left: 3%;
+    padding-right: 8%;
+    padding-top: 2%;
+}
+
+.contenedor_3 img+p{
+    font-size: 25px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor_4{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position: relative;
+    top: 500px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.contenedor_4 div{
+    width: 50%;
+    align-items: center;
+}
+
+.contenedor_4 img{
+
+   align-items: center;
+   border-radius: 15px;
+    
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor_5{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position:relative;
+    top: 500px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.contenedor_5 div{
+    width: 50%;
+    align-items: center;
+}
+
+.contenedor_5 img{
+
+   align-items: center;
+   border-radius: 15px;
+    
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor_6 {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position:relative;
+    top: 550px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.contenedor_6 div{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.contenedor_6 p{
+    font-weight:bold;
+}
+.contenedor_6 img{
+    border-radius: 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenedor_7{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position:relative;
+    top: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contenedor_7 div{
+    width: 50%;
+}
+
+.contenedor_7 img {
+    border-radius: 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenedor_8{
+    background-color: yellow;
+    position: relative;
+    top: 800px;
+    left: 8%;
+    width: 84%;
+    height: 180px;
+    display: flex;
+    flex-direction:row;
+   
+
+}
+
+.contenedor_8 div{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 50%;
+    height: 250px;
+    padding-left: 3%;
+    padding-right: 8%;
+    padding-top: 2%;
+}
+.contenedor_8 img{
+    align-self: flex-start;
+}
+
+.contenedor_8 img+p{
+    font-size: 25px;
 }
