@@ -19,6 +19,6 @@ from GAAF.views import Inicio, prueba
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', Inicio.as_view()),
+    path('', Inicio.as_view()),
     path('prueba/', prueba.as_view()),
 ]
