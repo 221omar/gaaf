@@ -6,3 +6,6 @@ class Inicio (TemplateView):
 
 class prueba (TemplateView):
     template_name = "Paginas/prueba.html"
+    
+class tienda (TemplateView):
+    template_name = "Paginas/tienda.html"
