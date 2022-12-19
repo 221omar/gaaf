@@ -361,3 +361,84 @@ font-size: 20px;
     left: 10%;
     width: 80%;
 }
+
+.tienda_a{
+    position: relative;
+    top: 100px;
+    width: 75%;
+   
+    background-color: white;
+    padding-top: 10px;
+
+    overflow:hidden ;
+}
+
+.producto{
+    float: left;
+    width: 160px;
+    border: 2px solid green;
+    margin: 15px;
+}
+
+.carrito_img {
+    width: 100px;
+}
+.carrito_titulo{
+    color:black;
+    font-weight: 500;
+    font-size: 25px;
+}
+.carrito_precio{
+    color:black;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.tienda_b{
+    position: absolute;
+    width: 22%;
+    height: 450px; 
+    left: 76%;
+    background-color: white;
+    top: 140px;
+    padding-top: 30px;
+    overflow:hidden ;
+
+}
+
+.tienda_u{
+overflow-y: scroll;
+width: 100%;
+height: 340px;
+bottom: 20px;
+float:left ;
+
+}
+
+.producto_b{
+
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+.carrito_img_u {
+    width: 60px;
+    float: left;
+}
+.carrito_titulo_u{
+    font-weight: 500;
+    float: left;
+    padding-top: 30px;}
+.carrito_precio_U{
+    font-weight: 500;
+    float: left;
+    padding-top: 0px;
+}
+.pago{
+    float: left;
+    width: 100%;
+    height: 80px;
+    float:left ;
+}
