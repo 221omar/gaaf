@@ -4,87 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tienda</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
-        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+    
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'Estilos/tienda.css' %}" >
+
+    <title>Tienda</title>
 </head>
 <!--encabezado/logo-->
 <body>
-    <div class="grilla-gaaf">
-        <!--barra/servicios/buscador/ubicacion/carrito/perfil-->
-        <header class="header">
-            <h1 class="h1-principal">GAAF</h1>
-        </header>
-        <nav class="nav-header">
-            <h2 class="gaaf">TIENDA GAAF</h2>
-            <ul class="lista-barra barra-lista">
-                <li class="contenedor"><a href="../index.html">INICIO</a><a/li>
-                <li class="contenedor"><a href="../secciones/nosotros.html">NOSOTROS</a></li>
-                <li class="contenedor"><a href="../secciones/asesorias.html">ASESORIAS</a></li>
-                <li class="contenedor"><a href="../secciones/servicios.html">SERVICIOS</a></li>
-                <li class="contenedor"><a href="../secciones/productos.html">PRODUCTOS</a></li>
-                <li class="contenedor"><a href="../secciones/tienda.html">TIENDA</a></li>
-                <li class="contenedor"><a href="../secciones/contacto.html">CONTACTO</a></li>
-            </ul>
-            <ul class="lista-barra">
-                <li class="redes-nav nav-redes redes">
-                <img class="logo-redes" src="https://img.icons8.com/nolan/64/search.png"/>
-                <img class="logo-redes" src="https://img.icons8.com/nolan/64/online-shopping.png"/>
-                <img class="logo-redes" src="https://img.icons8.com/nolan/40/test-account.png"/>
-                <img class="logo-redes" src="https://img.icons8.com/nolan/64/shopping-cart-loaded.png"/>
-                </li>
-            </ul>
-        </nav>
-        <!--cuerpo/-->
-        <!--informacion/imagenes/video/-->
-        <main class="main cuerpo">
-            <P class="p-flex">Encuentra tus Articulos Favoritos</P>
-        <div class="gaaf1">
-            <h2 class="secundario">ARTICULOS ORIGINALES DE GAAF.</h2>
-                <img class="img" src="./imagenes/250/gaaf.jpeg" alt="gaaf">
-                    <p class="p-flex">camisa 100% algodon ideal para practicas de tiro ya que su composicion permite absorber los resultados de la tirada.</p>
-                <img class="img" src="./imagenes/250/tiro5.jpg" alt="tiro5">
-        </div>
-        </main>
-        <aside class="aside">
-            <h2 class="secudario">Publicidad</h2>
-        </aside>
-        <!--piede pagina/nav/contacto-->
-        <footer class="footer">
-            <nav class="nav-footer">
-                <p class="texto-footer">Conocer mas!</p>
-                <ul class="lista-footer">
-                    <li class="contenedor-footer"><a href="../secciones/registro-arma.html">REGISTRO DE ARMA</a></li>
-                    <li class="contenedor-footer"><a href="">CLUB CINEGETICO</a></li>
-                    <li class="contenedor-footer"><a href="">TIRO CON PISTOLA</a></li>
-                    <li class="contenedor-footer"><a href="">S.M.N.</a></li>
-                    <li class="contenedeor-footer"><a href="">PORTACION DE ARMA</a></li>
-                    <li class="contenedeor-footer"><a href="">TALLER DE REPARACIÓN</a></li>
+    
+    <!--barra/servicios/buscador/ubicacion/carrito/perfil-->
+    {% include "../Complementos/barra_navegacion.html"%}
 
-                </ul>
-                <ul class="lista-footer">
-                    <li class="redes-footer"><img src="https://img.icons8.com/neon/25/000000/experimental-facebook-new-neon.png"/></li>
-                    <li class="redes-footer"><img src="https://img.icons8.com/nolan/64/youtube.png"/></li>
-                    <li class="redes-footer"><img src="https://img.icons8.com/stickers/100/000000/instagram-new--v2.png"/></li>
-                </ul>
-            </nav>
-            <form action="url destino">
-                <label class="label" for="nombre"><span>ingresa tu nombre por favor</span>
-                    <input type="text" name="nombre" id="nombre" placeholder="nombre completo"></label>
-                <label class="label" for="email"><span>correo electronico</span>
-                    <input type="email" name="email" id="emailAddress" placeholder="gaaf@example.com"></label>
-                <label class="label" for="contrasenna"><Span>contraseña</Span>
-                    <input type="password" name="contrassena" id="contrassena"></label>
-                    <input type="submit">
-            </form>
-        </footer>
+    <div class="tienda_a" id="carrito_a">
+        <script>
+            var cant_productos = 10;
+           
+            for( let i = 0; i < cant_productos ; i++ ){
+            var producto = document.createElement('div');
+            producto.setAttribute('class', 'producto');
+                producto.innerHTML= `
+                
+                    <img class="carrito_img" src="{% static 'Imagenes/tienda/audifonos1.jpg' %}" alt="audifonos_1">
+              
+ 
+                    <p class="carrito_titulo">audifonos</p>
+                    <p class="carrito_precio">precio:1500</p>
+
+                    <button class="boton">Agregar</button>`
+
+            var contenedor = document.getElementById("carrito_a");
+            contenedor.appendChild(producto);}
+            
+        </script>
+
+
     </div>
+    <div class="tienda_b">
+        <did  class="tienda_u" id="carrito_u">
+            <script>
 
+            for( i = 0; i < cant_productos ; i++ ){
+            var producto_b = document.createElement('div');
+            producto_b.setAttribute('class', 'producto_b');
+                producto_b.innerHTML= `
+                
+                    <img class="carrito_img_u" src="{% static 'Imagenes/tienda/audifonos1.jpg' %}" alt="audifonos_1">
+              
+                    <p class="carrito_titulo_u">audifonos</p>
+                    <p class="carrito_precio_U">precio:1500</p>
+                    <button class="boton">-</button>
+                    <button class="boton">+</button>`
 
+            var contenedor_u = document.getElementById("carrito_u");
+            contenedor_u.appendChild(producto_b);}
 
+            </script>
+        </did>
+        <div class="pago">
+            <p>total:</p>
+            <button>pagar</button>
+        </div>
+
+    </div>
 </body>
 
 </html>
